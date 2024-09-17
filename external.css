@@ -1,0 +1,97 @@
+/* body {
+  width: 80%;
+  margin: 0 auto !important;
+}
+
+.my-form {
+  margin-top: 10vh;
+}
+
+.div-flex {
+  height: 100px;
+  width: 100px;
+}
+
+.flex-parent {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.red {
+  background-color: red;
+}
+
+.green {
+  background-color: green;
+}
+
+.blue {
+  background-color: blue;
+} */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(img/grid.jpg);
+}
+
+.shape-container {
+  position: relative;
+  width: 300px;
+  height: 300px;
+}
+
+.circle-one,
+.circle-two,
+.circle-three,
+.circle-four {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.circle-one {
+  background-color: #4e2161;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) translateX(-350px);
+}
+
+.circle-two {
+  background-color: #9bbfab;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) translateX(-100px);
+}
+
+.circle-three {
+  background-color: #ebf0c2;
+  z-index: 3;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) translateX(150px);
+}
+
+.circle-four {
+  background-color: #774e26;
+  z-index: 4;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) translateX(400px);
+}
+
+a {
+  transform: translate(-150px, 300px);
+}
