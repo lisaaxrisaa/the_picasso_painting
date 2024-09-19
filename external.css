@@ -117,7 +117,7 @@ p {
 }
 
 form {
-  width: 800px;
+  max-width: 800px;
   font-size: 40px;
 }
 
@@ -210,6 +210,49 @@ form {
 
   form {
     width: 600px;
+    font-size: 30px;
+  }
+}
+
+/* Smaller Mobile */
+@media (max-width: 500px) {
+  .shape-container {
+    width: 100px;
+    height: 125px;
+  }
+
+  .circle-one,
+  .circle-two,
+  .circle-three,
+  .circle-four {
+    width: 119px;
+    height: 119px;
+  }
+
+  img {
+    width: 119px;
+    height: 119px;
+  }
+
+  .circle-one {
+    transform: translate(-50%, -50%) translateX(-160px);
+  }
+
+  .circle-two {
+    transform: translate(-50%, -50%) translateX(-80px);
+  }
+
+  .circle-three {
+    transform: translate(-50%, -50%) translateX(80px);
+  }
+
+  .circle-four {
+    transform: translate(-50%, -50%) translateX(160px);
+  }
+
+  form {
+    width: 100%;
+    padding: 20px;
     font-size: 30px;
   }
 }
